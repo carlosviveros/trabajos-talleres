@@ -1619,13 +1619,13 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact {
   background: #fafbff;
   padding: 30px;
   height: 100%;
 }
 
-.contact .php-email-form .error-message {
+.contact  .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1635,7 +1635,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .sent-message {
+.contact  .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1645,7 +1645,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact  .loading {
   display: none;
   background: #fff;
   text-align: center;
@@ -1653,7 +1653,7 @@ section {
   margin-bottom: 24px;
 }
 
-.contact .php-email-form .loading:before {
+.contact  .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1666,26 +1666,26 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact  input, .contact  textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 0;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact  input:focus, .contact  textarea:focus {
   border-color: #444444;
 }
 
-.contact .php-email-form input {
+.contact  input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact  textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact  button[type="submit"] {
   background: #444444;
   border: 0;
   padding: 10px 30px;
@@ -1694,7 +1694,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact  button[type="submit"]:hover {
   background:#444444;
 }
 
@@ -2402,3 +2402,52 @@ section {
   font-size: 13px;
   color: #444444;
 }
+/*--------------------------------------------------------------
+bOTÒN COTIZAR
+--------------------------------------------------------------*/
+.btn{
+  line-height: 0;
+  padding: 30px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background:#444444;
+  box-shadow: 0px 5px 25px   #D1C5C3;
+}
+/*--------------------------------------------------------------
+Animación texto
+--------------------------------------------------------------*/
+
+  .ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color:#444444;
+  transform-origin: 0 10%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+

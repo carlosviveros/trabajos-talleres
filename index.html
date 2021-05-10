@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Talleres&tareas</title>
+  <title>Trabajos&talleres</title>
   <meta content="" name="description">
 
   <meta content="" name="keywords">
@@ -43,134 +43,54 @@
   ======================================================== -->
 </head>
 
-
 <body>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/" height="1000px" alt="">
         <h1 class="ml11">
           <span class="text-wrapper">
             <span class="line line1"></span>
             <span class="letters">Trabajos&Talleres</span>
           </span>
         </h1>
-<style>
-  .ml11 {
-  font-weight: 700;
-  font-size: 3.5em;
-}
-
-.ml11 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-}
-
-.ml11 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 3px;
-  background-color:#444444;
-  transform-origin: 0 10%;
-}
-
-.ml11 .line1 { 
-  top: 0; 
-  left: 0;
-}
-
-.ml11 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-</style>  
-<script>
-  // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml11 .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ml11 .line',
-    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100
-  }).add({
-    targets: '.ml11 .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: (el, i) => 34 * (i+1)
-  }).add({
-    targets: '.ml11',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-</script>      
       </a>
-    
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Acerca de nosotros</a></li>
           <li><a class="nav-link scrollto" href="#values">Pasos a seguir</a></li>
-          <li><a class="nav-link scrollto" href="#features">Materias</a></li>
-
-              
-    
-          <li><a class="nav-link scrollto" href="#345">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="#features">Materias</a></li>    
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
           <li><a class="getstarted scrollto" href="#about">Empezar </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-
   <section id="hero" class="hero d-flex align-items-center">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-         <h1 data-aos="fade-up">¡Hola!</h1>
-          <h3 data-aos="fade-up" data-aos-delay="400"> Aquí estamos comprometidos con tu formación académica</h2>
+          <h1 data-aos="fade-up">¡Hola!</h1>
+          <h2  data-aos="fade-up" data-aos-delay="400">Te colaboramos en la realización de cualquier trabajo.</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
               <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>¿Quieres ver cómo?</span>
-                
                 <i class="bi bi-arrow-right"></i>
               </a>
-              <div>
-                <!-- Use classes 2,3, or 4 to match the number of words -->
-     
-            </div>
             </div>
           </div>
         </div>
-
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-     
           <img src="assets/img/features.png" class="img-fluid" alt="">
         </div>
       </div>
@@ -201,7 +121,6 @@ anime.timeline({loop: true})
                   <span><i class="fab fa-wpforms"></i></span><br>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-
               </div>
             </div>
           </div>
@@ -212,6 +131,7 @@ anime.timeline({loop: true})
 
         </div>
       </div>
+
     </section><!-- End About Section -->
 
     <!-- ======= Values Section ======= -->
@@ -225,25 +145,27 @@ anime.timeline({loop: true})
         </header>
 
         <div class="row">
+
           <div class="col-lg-3">
             <div class="box" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/values-1.png"  class="img-fluid" alt="">
-              <a href="#345"><h3>Contacta <i class="bi bi-arrow-right"></i></h3>
-              <p style="text-align: justify;">En la sección de arriba y en la última  encontrarás los botones correspondientes. </p>
-            </a>
+              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <a href="#contact"><h3>Contacta <i class="bi bi-arrow-right"></i></h3>
+                <p style="text-align: justify;">En la sección de arriba y en la última  encontrarás los botones correspondientes. </p>
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-3 mt-3 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="400">
+
+        
+          <div class="col-lg-3">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/values-2.png" class="img-fluid" alt="">
               <h3>Específica <i class="bi bi-arrow-right"></i></h3>
               <p>Menciona la fecha de entrega, materia, tema y condiciones del trabajo.</p>
             </div>
           </div>
 
-
-          <div class="col-lg-3 mt-3 mt-lg-0">
+          <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="400">
               <img src="assets/img/values-4.png" class="img-fluid" alt="">
               <h3>Cotiza <i class="bi bi-arrow-right"></i> </h3>
@@ -251,8 +173,7 @@ anime.timeline({loop: true})
             </div>
           </div>
 
-
-          <div class="col-lg-3 mt-3 mt-lg-0">
+          <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="600">
               <img src="assets/img/values-3.png" class="img-fluid" alt="">
               <h3>Recibe el trabajo.</h3>
@@ -261,14 +182,13 @@ anime.timeline({loop: true})
           </div>
 
         </div>
-      </div>
-    </section><!-- End Values Section -->
-<!--Div where the WhatsApp will be rendered-->  
 
+      </div>
+
+    </section><!-- End Values Section -->
 
     <!-- ======= Counts Section ======= -->
-  <!-- End Counts Section -->
-
+   <!-- End Counts Section -->
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
 
@@ -330,12 +250,12 @@ anime.timeline({loop: true})
             </div>
           </div>
 
-        </div> <!-- / row -->
+        </div><!-- / row -->
 
         <!-- Feature Tabs -->
         <div class="row feture-tabs" data-aos="fade-up">
           <div class="col-lg-6">
-            <h3>¿Qué ofrecen ustedes que los demás no? </h3>
+            <h3>¿Qué ofrecen ustedes que los demás no?</h3>
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
@@ -353,33 +273,26 @@ anime.timeline({loop: true})
             <div class="tab-content">
 
               <div class="tab-pane fade show active" id="tab1">
-                <p> Nos diferenciamos del resto por los elementos expuestos a continuación:</p>
+                <p>Nos diferenciamos del resto por los elementos expuestos a continuación:</p>
                 <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i><br>
-                  <h4>La mejor entrega:</h4>
+                  <i class="bi bi-check2"></i>
+                  <h4>La mejor entrega</h4>
                 </div>
                 <p>En conformidad con los líneamientos establecidos por ustedes.</p>
                 <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-check2"></i><br>
-                  <h4>Una buena nota:</h4>
-                </div>
-                <p>Donde se obtenga una calificación como mínimo de aprobado.</p>
-                <div class="d-flex align-items-center mb-2">
                   <i class="bi bi-check2"></i>
-                  <h4>Confiabilidad:</h4>
+                  <h4>Confiabilidad</h4>
                 </div>
-                <p>Por conservar tanto la información financiera como personal de nuestros clientes.   </p>
-         
+                <p>Por conservar tanto la información financiera como personal de nuestros clientes. </p>
               </div><!-- End Tab 1 Content -->
 
               <div class="tab-pane fade show" id="tab2">
                 <p>Manejamos precios asequibles para todos nuestros clientes. Sin embargo, están condicionadados por su:</p>
-
                 <div class="d-flex align-items-center mb-2">
                   <i class="bi bi-check2"></i>
                   <h4>Complejidad, extensión y fecha de entrega</h4>
                 </div>
-                <p>A razón de ello, se le proporcionará una cotización de acuerdo a lo anterior .</p>
+                <p>A razón de ello, se le proporcionará una cotización de acuerdo a lo anterior.</p>
                 <div class="d-flex align-items-center mb-2">
                 </div>
               </div><!-- End Tab 2 Content -->
@@ -409,26 +322,38 @@ anime.timeline({loop: true})
         </div><!-- End Feature Tabs -->
 
         <!-- Feature Icons -->
-        
+      
+
+        </div><!-- End Feature Icons -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+   <!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
 
       <div class="container" data-aos="fade-up">
- 
+
         <header class="section-header">
-          <h2 id="uno">p.F </h2>
-          <p>Preguntas Frecuentes</p>
+          <h2>P.F.</h2>
+          <p>Preguntas frecuentes</p>
         </header>
 
         <div class="row">
           <div class="col-lg-6">
             <!-- F.A.Q List 1-->
             <div class="accordion accordion-flush" id="faqlist1">
-              <div class="accordion-item"  >
+              <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                  ¿Cuál es el procedimiento o pasos a seguir?
+                    ¿Cuál es el procedimiento o pasos a seguir?
                   </button>
                 </h2>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
@@ -441,7 +366,7 @@ anime.timeline({loop: true})
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                   ¿Cómo aseguran mi confidencialidad?
+                    ¿Cómo aseguran mi confidencialidad?
                   </button>
                 </h2>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
@@ -475,7 +400,7 @@ anime.timeline({loop: true})
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-   ¿Se debe pagar primero?
+                    ¿Se debe pagar primero?
                   </button>
                 </h2>
                 <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
@@ -488,13 +413,12 @@ anime.timeline({loop: true})
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
-                    ¿Qué materias hacen?
+                   ¿Qué materías hacen?
                   </button>
                 </h2>
                 <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                  Por el momento nos enfocamos en 5: Sociales, español, filosofía, constitución y tecnología
-
+                    Por el momento nos enfocamos en 5: Sociales, español, filosofía, constitución y tecnología
                   </div>
                 </div>
               </div>
@@ -507,7 +431,7 @@ anime.timeline({loop: true})
                 </h2>
                 <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                   Podrás hacer la consigna sin problemas por Bancolombia o Nequi
+                    Podrás consignar sin problemas por Bancolombia o Nequi. No  te preocupes
                   </div>
                 </div>
               </div>
@@ -516,12 +440,34 @@ anime.timeline({loop: true})
           </div>
 
         </div>
-        <p id="345"></p>
+
       </div>
 
     </section><!-- End F.A.Q Section -->
 
-    <!-- ======= Portfolio Section ======= --
+    <!-- ======= Portfolio Section ======= -->
+   <!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+  <!-- End Clients Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+   <!-- End Recent Blog Posts Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
 
@@ -548,22 +494,22 @@ anime.timeline({loop: true})
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Télefono</h3>
-                  <p>+57  3167790462</p>
+                  <p>+57 3167790462</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-envelope"></i>
                   <h3>Correo</h3>
-                  trabajostallerescolombia@gmail.com
-                  </p>
+                  <p> trabajostallerescolombia@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-clock"></i>
                   <h3>Horario de atención</h3>
-                  <p>Lunes-Viernes (9:00AM - 05:00PM)</p>
+                  <p>Lunes-Viernes <br>
+                    9:00AM - 05:00PM</p>
                 </div>
               </div>
             </div>
@@ -571,22 +517,22 @@ anime.timeline({loop: true})
           </div>
 
           <div class="col-lg-6">
-            <form name="contact" method="POST" data-netlify="true">
+            <form action=""  method="post" class="">
               <div class="row gy-4">
 
                 <div class="col-md-6">
                   <label class="label">Nombre</label>
-                  <input type="text" name="name" class="form-control" placeholder="" required>
+                  <input type="text" name="name" class="form-control" placeholder="Ejp: Luis" required>
                 </div>
 
                 <div class="col-md-6 ">
                   <label class="label">Correo</label>
-                  <input type="email" class="form-control" name="email" placeholder="" required>
+                  <input type="email" class="form-control" name="email" placeholder="Ejp:Luis"" required>
                 </div>
 
                 <div class="col-md-12">
                   <label class="label">Materia y condiciones del trabajo</label>
-                  <input type="text" class="form-control" name="" placeholder="" required>
+                  <textarea type="text" class="form-control" name="" placeholder="" required>
                 </div>
                 <div class="col-md-12">
                   <label class="label">Fecha de entrega</label>
@@ -601,21 +547,13 @@ anime.timeline({loop: true})
                 </div>
 
                 <div class="col-md-12 text-center">
-                
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button class="btn" type="submit">Cotizar</button>
+                  <button  type="submit">Cotizar</button>
                 </div>
-<style>
-  .btn{
-  line-height: 0;
-  padding: 20px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background:#444444;
-  box-shadow: 0px 5px 25px   #D1C5C3;
-}
-</style>
+
               </div>
             </form>
 
@@ -632,53 +570,44 @@ anime.timeline({loop: true})
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="footer-newsletter">
-     
-          </div>
-          <div class="col-lg-2">
-          
-          </div>
-     
+    
 
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-12 footer-info">
+          <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
               <img src="assets/img/logo.png" alt="">
               <span>Trabajos&Talleres</span>
-            </a>Profesionales dedicados a ayudarte, mejorar y disminuir la carga académica por ti.</p>
+            </a>
+            <p>Profesionales dedicados a ayudarte, mejorar y disminuir la carga académica por ti.</p>
             <div class="social-links mt-3">
-            <p>
               <a href="https://www.instagram.com/trabajos_talleres/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
               <a href="https://api.whatsapp.com/send?phone=573167790462&text=Hola%2C%20necesito%20un%20trabajo" class="linkedin"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-6 footer-links">
-            <h4>Links de Navegación</h4>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Navegación</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#hero">Incio</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#about">Acerca de nosotros </a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#values">Pasos a Seguir</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#features"> Materias</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Contacto</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
-          
-              <h4>Contacto</h4>
-              <p>
-              Cali, Valle del Cauca <br>
-              Colombia <br><br>
-                <strong>Telefono:</strong> <br>3167790462<br>
-                <strong>Email:</strong><br> trabajostalleres<br>colombia@gmail.com
-              </p>
-        
-          </div>
 
-          <div class="">
-          
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contacto</h4>
+            <p>
+            Cali, Valle del Cauca <br>
+            Colombia <br><br>
+              <strong>Telefono:</strong> <br>3167790462<br>
+              <strong>Email:</strong><br> trabajostalleres<br>colombia@gmail.com
+            </p>
+            </p>
 
           </div>
 
@@ -688,14 +617,11 @@ anime.timeline({loop: true})
 
     <div class="container">
       <div class="copyright">
-        &copy;  <strong><span>Trabajos&Talleres</span></strong>.<br>
-        Desarollado por: Carlos Andrés Viveros
+        &copy; Todos los derechos reservados a <strong><span>Trabajos&talleres</span></strong>. 
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+       
+        Desarollado por  <a href="https://bootstrapmade.com/">Carlosviveros</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -713,79 +639,8 @@ anime.timeline({loop: true})
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/function.js"></script>
   <div id="WAButton"></div>  
 </body>
-<script type="text/javascript">  
-  $(function () {
-          $('#WAButton').floatingWhatsApp({
-              phone: '573167790462', //WhatsApp Business phone number
-              headerTitle: 'Trabajos&Talleres!', //Popup Title
-              popupMessage: 'Hola, gracias por comunicarte con Trabajos&Talleres, ¿cómo te puedo ayudar?', //Popup Message
-              showPopup: true, 
-              showOnIE: false,//Enables popup display
-              buttonImage: '<img src="assets/img/favicon.png"/>', //Button Image', //Button Image
-              headerColor: '#444444',
- //Custom header color
-            backgroundColor: 'white', //Custom background button color
-              position: "left" //Position: left | right
 
-          });
-      });
-</script>
-<style>
-  #div{
-  overflow: hidden;
-  position: relative;
-   left: -50px;
-  height: 75px;
-  padding-top: 20px;
-  margin-top: -10px;
-}
-  #udo {
-      color:black;
-      font-weight: 700;
-      padding: 0 10px;
-      height: 15px;
-      margin-bottom: 15px;
-      display: block;
-  }
-
-
-.flip2 { animation: flip2 2.5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 2.5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip4 { animation: flip4 4.5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-
-@keyframes flip2 {
-0% { margin-top: -180px; }
-5% { margin-top: -90px;  }
-50% { margin-top: -90px; }
-55% { margin-top: 0px; }
-99.99% { margin-top: 0px; }
-100% { margin-top: -270px; }
-}
-
-@keyframes flip3 {
-0% { margin-top: -270px; }
-5% { margin-top: -180px; }
-33% { margin-top: -180px; }
-38% { margin-top: -90px; }
-66% { margin-top: -90px; }
-71% { margin-top: 0px; }
-99.99% { margin-top: 0px; }
-100% { margin-top: -270px; }
-}
-
-@keyframes flip4 {
-0% { margin-top: -360px; }
-5% { margin-top: -270px; }
-25% { margin-top: -270px; }
-30% { margin-top: -180px; }
-50% { margin-top: -180px; }
-55% { margin-top: -90px; }
-75% { margin-top: -90px; }
-80% { margin-top: 0px; }
-99.99% { margin-top: 0px; }
-100% { margin-top: -270px; }
-}
-</style>  
 </html>
